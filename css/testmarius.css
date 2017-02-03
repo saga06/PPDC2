@@ -1,0 +1,274 @@
+/**** --------- COLONNE LEFT --------- ****/
+
+#colonne1 { /* parametre general colonne gauche */
+    float: left;
+    width: 19%;
+    min-width: 170px;
+    height: 940px;
+    background-color: rgb(238,238,238);
+    border-right: solid 5px rgb(220,220,220);
+}
+
+#colonne1 p { /* centrer le texte */
+    margin: 0 auto;
+    color: darkgrey;
+    padding: 25px 20px;
+}
+
+        /********* NAV ****************/
+
+#colonne1 nav ul { /* enlever les puces du nav + centrer texte */
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+#new_test, #new_candidat, #new_users { /* position des bloc creer */
+    margin: 0 auto;
+    padding: 2px;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 12px;
+    background-color: rgb(220,220,220);
+}
+
+/**** --------- TOP SCREEN --------- ****/
+
+#top { /* parametre general du bloc top */
+    overflow: hidden;
+    background-color: rgb(250,250,250);
+    height: 70px;
+    border-bottom: solid 1px rgb(220,220,220);
+    border-top: solid 1px rgb(220,220,220);
+}
+
+/**** --------- MAIN CONTENT --------- ****/
+
+#main { /* parametre general du bloc main */
+    overflow-x: hidden;
+    overflow-y: auto;
+    /*background-color: rgb(250,250,250);*/
+    height: 800px;
+    border-bottom: solid 1px rgb(220,220,220);
+}
+
+/**** --------- FOOTER --------- ****/
+
+#footer { /* parametre general du bloc footer */
+    overflow: hidden;
+    background-color: rgb(250,250,250);
+    height: 70px;
+    border-bottom: solid 1px rgb(220,220,220);
+}
+
+#footer h5 { /* copyright */
+    background-image: url(images/copyright.svg);
+    background-repeat: no-repeat;
+    background-size: 0.9em;
+    background-position: center left;
+    margin: 0 auto;
+    padding-left: 20px;
+    line-height: 70px;
+}
+
+/**** --------- ALL CLASS COLOR --------- ****/
+
+.uppercase { /* transforme le texte en majuscule */
+    text-transform: uppercase;
+}
+
+.bold { /* mettre les mots en gras */
+    font-weight: bold;
+}
+
+.one { /* ligne bleu du nav + texte blanc */
+    background-color: #337ab7;
+    color: white;
+}
+
+.two { /* ligne blanche du nav + texte noir */
+    background-color: white;
+    color: black;
+}
+
+.white { /* texte blanc */
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+.black { /* texte noir */
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
+
+.blue { /* texte bleu */
+    text-decoration: none;
+    outline: none;
+    color: #204060;
+}
+
+.blue:hover { /* lorsqu'on passe la souris dessus */
+    text-decoration: none;
+    outline: none;
+    color: #3973ac;
+}
+
+.white:hover { /* lorsqu'on passe la souris dessus */
+    text-decoration: none;
+    outline: none;
+    color: rgb(240,240,240);
+}
+
+.black:hover { /* lorsqu'on passe la souris dessus */
+    text-decoration: none;
+    outline: none;
+    color: #404040;
+}
+
+
+/**** --------- ALL CLASS or DIV ALIGN/CENTER --------- ****/
+
+.first_ul { /* coller le nav a gauche */
+    padding: 0;
+}
+
+#second_ul { /* sous menu sous forme de treeview */
+    padding-left: 4em;
+    line-height: 2em;
+}
+
+.one h5, .two h5 { /* centrer le texte du nav */
+    margin: 0 auto;
+    padding: 10px 40px;
+}
+
+.principal_li { /* centrer le texte des li principaux */
+    margin: 0 auto;
+    padding: 10px 40px;
+}
+
+.centrer { /* centrer le texte du bloc top */
+    margin: 0 auto;
+    padding-left: 20px;
+    line-height: 70px;
+}
+
+.hide { /* cacher n'importe quel objet/balise/div */
+    display: none;
+}
+
+
+/**** --------- ALL CLASS POSITION --------- ****/
+
+.users { /* bloc top utilisateurs */
+    width: 70%;
+    float: left;
+}
+
+.tools { /* bloc top outils */
+    width: 30%;
+    float: right;
+    text-align: right;
+    padding: 10px;
+    font-family: 'Overpass', sans-serif;
+}
+
+#lvl label {
+  width: 200px;
+  position: relative;
+    bottom: 580px;
+    left: 600px;
+}
+
+#lvlbis label {
+  display: none;
+}
+
+
+/**** --------- ALL CLASS LOGO --------- ****/
+
+.logo_candidat, .logo_users { /* logo nav */
+    background-image: url(images/avatoir_noir.svg);
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+    background-position: center left;
+}
+
+.logo_test { /* logo nav */
+    background-image: url(images/exam2.svg);
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+    background-position: center left;
+}
+
+.logo_statistic { /* logo nav */
+    background-image: url(images/stat.svg);
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+    background-position: center left;
+}
+
+.logout { /* positionner logo deconnexion */
+    float: right;
+    padding-right: 20px;
+}
+
+.logo_arrow { /* positionner logo fleche  */
+    position: relative;
+    left: 7px;
+    cursor: pointer;
+}
+
+.logo_add { /* ajouter curseur au logo ajouter */
+    cursor: pointer;
+
+}
+
+/********* MEDIA QUERRIES POUR TABLETTE *********************************************************/
+
+@media all and (max-width: 1024px) {
+
+    #second_ul {
+        padding-left: 3em;
+        font-size: 13px;
+    }
+
+    #third_ul, #fourth_ul {
+        font-size: 12px;
+    }
+
+    .principal_li {
+        margin: 0 auto;
+        padding: 10px 30px;
+        font-size: 15px;
+    }
+
+    #new_test, #new_candidat, #new_users {
+    margin: 0 auto;
+    padding: 10px;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 12px;
+    border-radius: 15px;
+    width: 88%;
+    text-align: center;
+    background-color: rgb(210,210,210);
+    }
+
+    #titre-adresse {
+      right: 590px;
+      top: -10px;
+    }
+
+    #lvl label {
+      display: none;
+    }
+
+    #lvlbis label {
+      display: inline-block;
+      position: relative;
+      top: -960px;
+    }
+
+}

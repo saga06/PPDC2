@@ -6,3 +6,4 @@
 
     <!-- JAVASCRIPT -->
     <script src="./js/main.js"></script>
+    <script src="./js/onglet.js" charset="utf-8"></script>

@@ -8,7 +8,7 @@ include_once '../connection.php';
         "ID" => $ID
       );
     $req->execute($t);
-    header("Location: ../interface-liste-candidats.php");
+    header("Location: ../interface-liste-utilisateur.php");
    }
 
    suppr($_GET['ID'], $bdd);

@@ -42,7 +42,7 @@ class User
 
                 $this->_password = $triuc['password'];
                 $this->error = "Utilisateur vérifié, accès authorisé";
-                header('Location: interface-liste-candidats.php');
+                header('Location: interface-liste-utilisateur.php');
                 exit;
             }
 

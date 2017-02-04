@@ -18,10 +18,9 @@ if(isset($_POST['submit'])) {
   <html>
     <head>
 
-      <title>Page d'identification</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-      <meta charset="utf-8">
-
+    <title>Page d'identification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta charset="utf-8">
       <!--********************* ICONS ************************-->
       <link rel="icon" type="image/icon" href="css/img/index.ico" />
 
